@@ -1,0 +1,26 @@
+<zk xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.zkoss.org/2005/zul/zul.xsd">
+	<separator></separator>
+	<window vflex="true"  position="center" apply="org.zkoss.bind.BindComposer" viewModel="@id('vm') @init('ar.gfritz.TestVM')">
+		<vlayout vflex="true" hflex="true">
+		
+			<viewStack id="viewStack" show="@bind(vm.vs)">
+			
+				<stack id="list">
+					<button label="go to detail" onClick="@command('showDetail')"/>
+					<space/>
+					<label value="${labels.test.title}"/>
+					<label value="@load(vm.name)"/>
+					<button label="clickme" onClick="@command('ook')"/>
+				</stack>
+			
+				<stack id="detail">
+					<button label="go to list" onClick="@command('showList')"/>
+					<space/>
+					<label value="we are in the detail..."/>
+				</stack>
+			
+			</viewStack>
+			
+		</vlayout>
+	</window>
+</zk>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<language-addon>
+	<addon-name>viewStack</addon-name>
+	<language-name>xul/html</language-name>
+
+	<component>
+		<component-name>viewStack</component-name>
+		<extends>div</extends>
+		<component-class>ar.gfritz.viewstack.ViewStack</component-class>
+	</component>
+</language-addon>
